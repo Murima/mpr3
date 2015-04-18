@@ -144,5 +144,3 @@ after = `wc -l $file | cut -d " " -f1` 2> /dev/null
 echo "$before $after"
 ans= ` expr "$before" - "$after" ` 
 echo -e  "\033[1;32m ->> $ans  " ;
-
-
